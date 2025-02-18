@@ -7,12 +7,13 @@ import streamlit as st
 np.set_printoptions(suppress=True)
 
 # 📌 **앱 제목 및 소개 추가**
-st.title("🍊천혜향 레드향 오렌지지 귤 분류 ")
+st.title("🍊 한라봉 천혜향 레드향 귤 분류 ")
+
 
 # 📌 **사이드바 추가**
 
 st.sidebar.markdown("### 📌 사용 방법")
-st.sidebar.write("**이미지를 업로드하거나 카메라를 사용하세요.**")
+st.sidebar.write("1. **이미지를 업로드하거나 카메라를 사용**")
 
 
 # 📌 **모델 정보 표시**
@@ -73,7 +74,4 @@ if img_file_buffer is not None:
     st.write(f"### 🍊 Class: `{class_name}`")
     st.write(f"### ✅ Confidence score: `{confidence_score:.4f}`")
 
-    # 📌 **사이드바에 예측 결과 추가**
-    st.sidebar.markdown("### 🔍 예측 결과")
-    st.sidebar.write(f"**Class:** {class_name}")
-    st.sidebar.write(f"**Confidence:** {confidence_score:.4f}")
+  

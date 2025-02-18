@@ -12,7 +12,7 @@ np.set_printoptions(suppress=True)
 model = load_model('keras_model.h5', compile=False)
 
 # Load the labels
-class_names = open('labels.txt', 'r').readlines()
+class_names = open('labels.txt', 'r',encoding='utf-8').readlines()
 
 # 선택 옵션: 카메라 입력 또는 파일 업로드
 input_method = st.radio("이미지 입력 방식 선택", ["카메라 사용", "파일 업로드"])
